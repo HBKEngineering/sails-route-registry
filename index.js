@@ -1,14 +1,14 @@
-var blueprintRouteRegistry = require('sails-hook-drafter');
 var path = require('upath');
 var _ = require('underscore');
 
 /**
  * Creates a new `RouteRegistry` instance.
+ * @param {Object} blueprintRegistry An instance of the module `sails-hook-drafter`.
  * @param {Object} config A configuration hash.
  * @param {String} [options.prefix] The blueprint prefix.
  * @param {String} [options.restPrefix] The blueprint restPrefix.
  */
-function RouteRegistry(config){
+function RouteRegistry(blueprintRegistry, config){
 	this.config = _.defaults(config, {
 		prefix: '',
 		restPrefix: ''

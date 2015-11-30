@@ -21,7 +21,6 @@
     "upath": "^0.1.6"
   },
   "peerDependencies": {
-    "sails-hook-drafter": "git://github.com/HBKEngineering/sails-hook-drafter",
     "sails": ">=0.11.0"
   }
 }
