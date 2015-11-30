@@ -22,6 +22,6 @@
   },
   "peerDependencies": {
     "sails-hook-drafter": "git://github.com/HBKEngineering/sails-hook-drafter",
-    "sails": "^0.11.0"
+    "sails": ">=0.11.0"
   }
 }
