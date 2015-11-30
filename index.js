@@ -13,6 +13,7 @@ function RouteRegistry(blueprintRegistry, config){
 		prefix: '',
 		restPrefix: ''
 	});
+	this.blueprintRegistry = blueprintRegistry;
 
 	var routes = this._routes = {};
 
@@ -35,7 +36,7 @@ RouteRegistry.prototype = {
 	 * @param  {String} modelId    The model ID.
 	 */
 	blueprint: function(url, controller, modelId){
-		blueprintRouteRegistry.register(path.join('/', this.config.prefix, this.config.restPrefix, url), controller.toLowerCase(), modelId.toLowerCase());
+		this.blueprintRegistry.register(path.join('/', this.config.prefix, this.config.restPrefix, url), controller.toLowerCase(), modelId.toLowerCase());
 	},
 
 	/**
