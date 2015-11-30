@@ -1,0 +1,27 @@
+{
+  "name": "sails-route-registry",
+  "version": "1.0.0",
+  "description": "A class for registering different types of routes in Sails.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HBKEngineering/sails-route-registry.git"
+  },
+  "author": "HBK Engineering, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HBKEngineering/sails-route-registry/issues"
+  },
+  "homepage": "https://github.com/HBKEngineering/sails-route-registry",
+  "dependencies": {    
+    "underscore": "^1.8.3",
+    "upath": "^0.1.6"
+  },
+  "peerDependencies": {
+    "sails-hook-drafter": "git://github.com/HBKEngineering/sails-hook-drafter",
+    "sails": "^0.11.0"
+  }
+}
